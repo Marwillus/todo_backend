@@ -1,6 +1,12 @@
 var express = require("express");
 var router = express.Router();
 
+const {
+  createUser,
+  deleteUser,
+  loginUser,
+} = require("../controller/userController");
+
 /* GET users listing. */
 router.route("/").post(createUser);
 
